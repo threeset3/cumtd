@@ -24,12 +24,12 @@ public class CumtdTabsActivity extends TabActivity {
 	    Intent intent;  // Reusable Intent for each tab
 
 	    // Create intents to launch activity per tab
-	    
-	    intent = new Intent().setClass(this, NearbyStopsActivity.class);
-	    spec = tabHost.newTabSpec("nearby")
-		       .setIndicator("Nearby", res.getDrawable(R.drawable.ic_menu_myplaces))
-		       .setContent(intent);
-	    tabHost.addTab(spec);
+			
+      intent = new Intent().setClass(this, NearbyStopsActivity.class);
+      spec = tabHost.newTabSpec("nearby")
+           .setIndicator("Nearby", res.getDrawable(R.drawable.ic_menu_myplaces))
+           .setContent(intent);
+      tabHost.addTab(spec);
 	    
 
 	    intent = new Intent().setClass(this, LookupStopsActivity.class);
