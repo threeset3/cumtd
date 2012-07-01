@@ -11,24 +11,18 @@
     android:background="@drawable/title_bar_background"
     android:layout_height="wrap_content"
     android:layout_width="fill_parent"
-    android:paddingTop="3sp"
-    android:paddingBottom="3sp"
-    android:paddingRight="5sp"
-    android:paddingLeft="5sp">
+    android:paddingRight="5dp"
+    android:paddingLeft="15dp">
 
     <TextView
       android:id="@+id/StopName"
       android:text="Stop"
-      android:layout_weight="10"
-      android:lines="1"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:textSize="16sp"
+      android:textSize="20sp"
       android:textColor="@color/header_text"
       android:layout_centerVertical="true"
-      android:ellipsize="start"
       android:focusable="true"
-      android:focusableInTouchMode="true"   
       android:layout_toLeftOf="@+id/Star"
       android:layout_alignParentLeft="true"/>
 
@@ -37,7 +31,8 @@
       android:button="@drawable/btn_star"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_toLeftOf="@+id/Refresh"/>
+      android:layout_toLeftOf="@+id/Refresh"
+      android:layout_centerVertical="true"/>
 
     <ImageButton
       android:id="@+id/Refresh"
@@ -45,7 +40,8 @@
       android:layout_alignParentRight="true"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:src="@drawable/ic_menu_refresh"/>
+      android:src="@drawable/ic_menu_refresh"
+      android:layout_centerVertical="true"/>
   </RelativeLayout>
 
   <ProgressBar

@@ -11,8 +11,7 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:hint="stop location"
-    android:id="@+id/StopEditText"
-    android:textColor="@color/header_text"/>
+    android:id="@+id/StopEditText"/>
 
   <ListView style="@style/StopList" />
 </RelativeLayout>
