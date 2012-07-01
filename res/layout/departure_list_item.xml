@@ -5,8 +5,7 @@
   android:orientation="horizontal"
   android:background="@drawable/rowselector"
   android:layout_height="wrap_content"
-  android:layout_width="fill_parent"
-  android:paddingRight="10sp">
+  android:layout_width="fill_parent">
 
   <View
     android:id="@+id/stop_color_shape"
@@ -18,9 +17,10 @@
     android:id="@+id/departure_details"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:paddingTop="5sp"
-    android:paddingBottom="5sp"
-    android:paddingRight="10sp">
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
 
     <TextView
       android:id="@+id/route"
