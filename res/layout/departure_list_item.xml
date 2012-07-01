@@ -1,32 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:id="@+id/list_item"
-	android:background="@drawable/rowselector"
-	android:layout_height="wrap_content"
-	android:paddingTop="5sp"
-	android:paddingBottom="5sp"
-	android:paddingLeft="10sp"
-	android:paddingRight="10sp">
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/departure_list_item"
+  android:orientation="horizontal"
+  android:background="@drawable/rowselector"
+  android:layout_height="wrap_content"
+  android:layout_width="fill_parent"
+  android:paddingRight="10sp">
 
-	<TextView
-		android:id="@+id/route"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_alignParentLeft="true"
-		android:text="Name"
-		android:textColor="@color/text"
-		android:textSize="18sp"
-		android:layout_centerVertical="true"/>
+  <View
+    android:id="@+id/stop_color_shape"
+    android:background="@drawable/stop_color_shape"
+    android:layout_height="fill_parent"
+    android:layout_width="10dp"/>
 
-	<TextView
-		android:id="@+id/time"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_alignParentRight="true"
-		android:text="Name"
-		android:textColor="@color/text"
-		android:textSize="18sp"
-		android:layout_centerVertical="true"/>
+  <RelativeLayout
+    android:id="@+id/departure_details"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="5sp"
+    android:paddingBottom="5sp"
+    android:paddingRight="10sp">
 
-</RelativeLayout>
+    <TextView
+      android:id="@+id/route"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Name"
+      android:textColor="@color/text"
+      android:textSize="18sp"
+      android:layout_centerVertical="true"
+      android:layout_alignParentLeft="true"/>
+
+    <TextView
+      android:id="@+id/time"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Name"
+      android:textColor="@color/text"
+      android:textSize="18sp"
+      android:layout_centerVertical="true"
+      android:layout_alignParentRight="true"/>
+  </RelativeLayout>
+</LinearLayout>

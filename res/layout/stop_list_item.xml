@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:id="@+id/list_item"
+	android:id="@+id/stop_list_item"
 	android:background="@drawable/rowselector"
+  android:layout_width="fill_parent"
 	android:layout_height="wrap_content"
 	android:paddingTop="5sp"
 	android:paddingBottom="5sp"
@@ -30,5 +31,4 @@
 		android:id="@+id/star"
 		android:layout_height="fill_parent"
 		android:layout_alignParentTop="true"/>
-
 </RelativeLayout>
