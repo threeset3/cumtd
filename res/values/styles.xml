@@ -3,9 +3,10 @@
   <style name="StopList">
     <item name="android:id">@id/android:list</item>
     <item name="android:layout_width">fill_parent</item>
-    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_height">fill_parent</item>
     <item name="android:layout_below">@+id/StopEditText</item>
     <item name="android:divider">@drawable/dashed_divider</item>
     <item name="android:dividerHeight">1dp</item>
+    <item name="android:cacheColorHint">#00000000</item>
   </style>
 </resources>
