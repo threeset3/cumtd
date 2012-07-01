@@ -47,7 +47,7 @@ public class StopAdapter extends BaseAdapter implements ListAdapter {
 		
 		// create the view or get references to view components
 		if (convertView == null) {
-			convertView = inflater.inflate(R.layout.stop_list_item, null);	
+			convertView = inflater.inflate(R.layout.stop_list_item, parent, false);	
 			
             holder = new ViewHolder();
             holder.text = (TextView) convertView.findViewById(R.id.text);
