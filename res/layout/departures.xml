@@ -5,7 +5,7 @@
   android:id="@+id/RelativeLayout01"
   android:layout_height="fill_parent"
   android:layout_width="fill_parent"
-  android:background="@drawable/stitched_wool_repeating">
+  android:background="@drawable/blue_stripes_repeating">
 
   <RelativeLayout
     android:id="@+id/Header"
@@ -24,17 +24,12 @@
       android:lines="1"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:textSize="28sp"
+      android:textSize="16sp"
       android:textColor="@color/header_text"
       android:layout_centerVertical="true"
-
-      android:ellipsize="marquee"
-      android:marqueeRepeatLimit ="marquee_forever"
+      android:ellipsize="start"
       android:focusable="true"
       android:focusableInTouchMode="true" 	
-      android:scrollHorizontally="true"
-
-
       android:layout_toLeftOf="@+id/Star"
       android:layout_alignParentLeft="true"/>
 
