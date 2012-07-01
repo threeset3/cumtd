@@ -9,4 +9,16 @@
     <item name="android:dividerHeight">1dp</item>
     <item name="android:cacheColorHint">#00000000</item>
   </style>
+
+  <style name="EmptyList">
+    <item name="android:id">@id/android:empty</item>
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">fill_parent</item>
+    <item name="android:layout_below">@+id/StopEditText</item>
+    <item name="android:textSize">20sp</item>
+    <item name="android:textColor">@color/text</item>
+    <item name="android:layout_marginTop">15dp</item>
+    <item name="android:layout_marginLeft">5dp</item>
+    <item name="android:layout_centerHorizontal">true</item>
+  </style>
 </resources>

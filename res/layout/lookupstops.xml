@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout
   android:id="@+id/RelativeLayout01"
   xmlns:android="http://schemas.android.com/apk/res/android"
@@ -14,4 +13,8 @@
     android:id="@+id/StopEditText"/>
 
   <ListView style="@style/StopList" />
+
+  <TextView
+    style="@style/EmptyList"
+    android:text="No stops found."/>
 </RelativeLayout>
