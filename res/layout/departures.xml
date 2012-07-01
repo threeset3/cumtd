@@ -1,71 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout
-	android:id="@+id/RelativeLayout01"
-	android:layout_height="fill_parent"
-	android:layout_width="fill_parent"
-	android:background="@color/background" xmlns:android="http://schemas.android.com/apk/res/android">
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/RelativeLayout01"
+  android:layout_height="fill_parent"
+  android:layout_width="fill_parent"
+  android:background="@drawable/stitched_wool_repeating">
 
-	<RelativeLayout
-		android:id="@+id/Header"
-		android:background="@color/header_background"
-		android:layout_height="wrap_content"
-		android:layout_width="fill_parent"
-		android:paddingTop="3sp"
-		android:paddingBottom="3sp"
-		android:paddingRight="5sp"
-		android:paddingLeft="5sp">
-		
-		<TextView
-			android:id="@+id/StopName"
-			android:text="Stop"
-			android:layout_weight="10"
-			android:lines="1"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:textSize="28sp"
-			android:textColor="@color/header_text"
-			android:layout_centerVertical="true"
-			
-			android:ellipsize="marquee"
-        android:marqueeRepeatLimit ="marquee_forever"
-		android:focusable="true"
-        android:focusableInTouchMode="true" 	
-             android:scrollHorizontally="true"
-        
-        
-			android:layout_toLeftOf="@+id/Star"
-			android:layout_alignParentLeft="true"/>
+  <RelativeLayout
+    android:id="@+id/Header"
+    android:background="@color/header_background"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:paddingTop="3sp"
+    android:paddingBottom="3sp"
+    android:paddingRight="5sp"
+    android:paddingLeft="5sp">
 
-		<CheckBox
-			android:id="@+id/Star"
-			android:button="@drawable/btn_star"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_toLeftOf="@+id/Refresh"/>
-			
-		<ImageButton
-			android:id="@+id/Refresh"
-			android:background="@null"
-			android:layout_alignParentRight="true"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:src="@drawable/ic_menu_refresh"/>
-	</RelativeLayout>
-			
-	
-	<ProgressBar
-		android:layout_below="@+id/Header"
-		android:layout_marginTop="25px"
-		android:layout_centerHorizontal="true"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:id="@+id/loading"
-		android:visibility="visible"/>
-	
-	<ListView
-		style="@style/StopList"
-		android:layout_below="@+id/Header"/>
+    <TextView
+      android:id="@+id/StopName"
+      android:text="Stop"
+      android:layout_weight="10"
+      android:lines="1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="28sp"
+      android:textColor="@color/header_text"
+      android:layout_centerVertical="true"
+
+      android:ellipsize="marquee"
+      android:marqueeRepeatLimit ="marquee_forever"
+      android:focusable="true"
+      android:focusableInTouchMode="true" 	
+      android:scrollHorizontally="true"
+
+
+      android:layout_toLeftOf="@+id/Star"
+      android:layout_alignParentLeft="true"/>
+
+    <CheckBox
+      android:id="@+id/Star"
+      android:button="@drawable/btn_star"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toLeftOf="@+id/Refresh"/>
+
+    <ImageButton
+      android:id="@+id/Refresh"
+      android:background="@null"
+      android:layout_alignParentRight="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_menu_refresh"/>
+  </RelativeLayout>
+
+
+  <ProgressBar
+    android:layout_below="@+id/Header"
+    android:layout_marginTop="25px"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/loading"
+    android:visibility="visible"/>
+
+  <ListView
+    style="@style/StopList"
+    android:layout_below="@+id/Header"/>
 </RelativeLayout>
-
-
